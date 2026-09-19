@@ -7,11 +7,11 @@
   writeShellScript,
 }:
 let
-  version = "14.35.8480";
+  version = "15.37.8880";
 
   src = fetchurl {
     url = "https://resources.ninjarmm.com/development/ninjacontrol/${version}/ninjarmm-ncplayer-${version}_x86_64.rpm";
-    hash = "sha256-3AOFu8U47MTHUM9pyio6ruJf5ywBmQadB6fVS+zjf7E=";
+    hash = "sha256-HQryXZXm6BgmqzsYCcXHQTwLYyChDMpdKrxk5G68C+o=";
   };
 
   # Extract the single self-contained binary from the RPM.
