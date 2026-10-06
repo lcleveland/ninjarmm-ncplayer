@@ -37,7 +37,7 @@ buildFHSEnv {
       stdenv.cc.cc.lib
     ];
   runScript = writeShellScript "ncplayer-run" ''
-    export QT_QPA_PLATFORM=xcb
+    export QT_QPA_PLATFORM=''${QT_QPA_PLATFORM:-"wayland;xcb"}
     exec ${ncplayer-bin}/bin/ncplayer "$@"
   '';
 
